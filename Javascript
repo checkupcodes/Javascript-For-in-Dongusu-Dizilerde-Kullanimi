@@ -1,0 +1,17 @@
+$cekap = new Array(1,9,8,5,6,new Array(25,45,85,65,90,new Array(895,125,543,156),78,95,),2,9,3,)
+
+for(sayac1 in $cekap){
+    if(Array.isArray($cekap[sayac1])){
+        for(sayac2 in $cekap[sayac1]){
+            if(Array.isArray($cekap[sayac1][sayac2])){
+                for(sayac3 in $cekap[sayac1][sayac2]){
+                    document.write($cekap[sayac1][sayac2][sayac3] + "<br>");
+                }
+            }else{
+                document.write($cekap[sayac1][sayac2] + "<br>");
+            }
+        }
+    }else{
+        document.write($cekap[sayac1] + "<br>");
+    }
+}
